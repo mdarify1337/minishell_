@@ -6,7 +6,7 @@
 /*   By: mdarify <mdarify@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 13:27:37 by mdarify           #+#    #+#             */
-/*   Updated: 2023/03/07 12:51:01 by mdarify          ###   ########.fr       */
+/*   Updated: 2023/03/09 20:41:37 by mdarify          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,5 +151,5 @@ void	flinked_execution_command(t_cmd_node *command, t_env *env)
 		fcode.exit_status = 131;
 	else if (WIFEXITED(l))
 		fcode.exit_status = WEXITSTATUS(l);
-	printf("%d", fcode.exit_status);
+	//printf("%d", fcode.exit_status);
 }

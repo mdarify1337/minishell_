@@ -6,7 +6,7 @@
 /*   By: mdarify <mdarify@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 19:51:51 by mmounaji          #+#    #+#             */
-/*   Updated: 2023/03/07 13:28:31 by mdarify          ###   ########.fr       */
+/*   Updated: 2023/03/09 20:44:36 by mdarify          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	here_doc(t_element *node)
 		perror("bad file descriptor");
 	while (1)
 	{
-		buf = readline("\033[0;34m here_doc> ");
+		buf = readline("\033[0;34m here_doc> \033[0;00m");
 		if (buf == NULL)
 			break ;
 		if (!ft_strncmp(buf, node->content, len) && \

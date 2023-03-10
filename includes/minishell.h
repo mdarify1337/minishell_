@@ -6,7 +6,7 @@
 /*   By: mdarify <mdarify@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 19:10:22 by mmounaji          #+#    #+#             */
-/*   Updated: 2023/03/06 19:03:24 by mdarify          ###   ########.fr       */
+/*   Updated: 2023/03/10 08:09:27 by mdarify          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,8 @@ typedef	struct s_darify
 }	t_darify;
 t_darify		fcode;
 // MINISHELL: ------->execution
+void	fprint_link_error(char *error, int l, int l2);
+char	**env_arr(t_env_node *env);
 void	pwd(void);
 void	ft_echo(char **s);
 void	ft_exit(char **ex);
